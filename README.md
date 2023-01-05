@@ -16,7 +16,5 @@ cd ConverterJ
 java Main.java
 ```
 
-# Code of Conduct
-
 # License
 ConverterJ is under [**MIT License**](https://mit-license.org/) licensed.
