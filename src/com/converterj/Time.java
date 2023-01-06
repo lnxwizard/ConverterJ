@@ -8,7 +8,7 @@ public class Time {
     Scanner scan = new Scanner(System.in);
 
     // Seconds to Hour
-    public void s_to_hr() {
+    public void sToHr() {
         System.out.println("Please Enter Seconds Value: ");
         double s = scan.nextDouble();
         double hr = s * 0.00027778;
@@ -16,7 +16,7 @@ public class Time {
     }
 
     // Seconds to Day
-    public void s_to_day() {
+    public void sToDay() {
         System.out.println("Please Enter Seconds Value: ");
         double s = scan.nextDouble();
         double day = s * 0.000011574;
@@ -24,7 +24,7 @@ public class Time {
     }
 
     // Minutes to Day
-    public void min_to_day() {
+    public void minToDay() {
         System.out.println("Please Enter Minutes Value: ");
         double min = scan.nextDouble();
         double day = min * 0.00069444;
@@ -32,7 +32,7 @@ public class Time {
     }
 
     // Hour to Seconds
-    public void hr_to_s() {
+    public void hrToS() {
         System.out.println("Please Enter Hours Value: ");
         double hr = scan.nextDouble();
         double s = hr / 0.00027778;
@@ -40,7 +40,7 @@ public class Time {
     }
 
     // Day to Seconds
-    public void day_to_s() {
+    public void dayToS() {
         System.out.println("Please Enter Days Value: ");
         double day = scan.nextDouble();
         double s = day / 0.000011574;
@@ -48,7 +48,7 @@ public class Time {
     }
 
     // Day to Minutes
-    public void day_to_min() {
+    public void dayToMin() {
         System.out.println("Please Enter Days Value: ");
         double day = scan.nextDouble();
         double min = day * 1440;

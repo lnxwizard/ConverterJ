@@ -8,7 +8,7 @@ public class Temperature {
     Scanner scan = new Scanner(System.in);
 
     // Celsius to Fahrenheit
-    public void c_to_f() {
+    public void cToF() {
         System.out.println("Please Enter Celsius Value: ");
         double c = scan.nextDouble();
         double f = (c * 1.8000) + 32;
@@ -16,7 +16,7 @@ public class Temperature {
     }
 
     // Celsius to Kelvin
-    public void  c_to_k() {
+    public void  cToK() {
         System.out.println("Please Enter Celsius Value: ");
         double c = scan.nextDouble();
         double k = c + 273.15;
@@ -24,7 +24,7 @@ public class Temperature {
     }
 
     // Fahrenheit to Celsius
-    public void f_to_c() {
+    public void fToC() {
         System.out.println("Please Enter Fahrenheit Value: ");
         double f = scan.nextDouble();
         double c = (f - 32) / 1.8000;
@@ -32,7 +32,7 @@ public class Temperature {
     }
 
     // Fahrenheit to Kelvin
-    public void f_to_k() {
+    public void fToK() {
         System.out.println("Please Enter Fahrenheit Value: ");
         double f = scan.nextDouble();
         double k = ((f - 32) / 1.8000) + 273.15;
@@ -40,7 +40,7 @@ public class Temperature {
     }
 
     // Kelvin to Celsius
-    public void  k_to_c() {
+    public void  kToC() {
         System.out.println("Please Enter Kelvin Value: ");
         double k = scan.nextDouble();
         double c = k - 273.15;
@@ -48,7 +48,7 @@ public class Temperature {
     }
 
     // Kelvin to Fahrenheit
-    public void k_to_f() {
+    public void kToF() {
         System.out.println("Please Enter Kelvin Value: ");
         double k = scan.nextDouble();
         double f = ((k - 273.15) * 1.8000) + 32;
