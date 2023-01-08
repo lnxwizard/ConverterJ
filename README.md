@@ -15,6 +15,14 @@ cd ConverterJ
 java Main.java
 ```
 
+# About
+- Latest Version:  Build 0.0.0.25
+- First Release:  Thursday, January 5, 2023
+- Last Updated:  Friday 6, 2023
+- License:  ![MIT License](https://mit-license.org/)
+- Language:  Java
+
+
 # Images
 
 ![1](https://user-images.githubusercontent.com/91411319/210850837-56e0422e-2424-408d-bc8e-0542e03d27ad.png)
