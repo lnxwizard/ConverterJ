@@ -3,10 +3,10 @@ package com.converterj;
 
 // Import
 import java.util.*;
+import java.lang.*;
 
 public class Main {
     public static void main(String[] args) {
-
         boolean showAgainMM = true;
         while (showAgainMM) {
             Scanner scan = new Scanner(System.in);
@@ -83,22 +83,22 @@ public class Main {
 
                     switch (weight_action) {
                         case 1:
-                            mCon.weight.kg_to_lbs();
+                            mCon.weight.kgToLbs();
                             break;
                         case 2:
-                            mCon.weight.kg_to_st();
+                            mCon.weight.kgToSt();
                             break;
                         case 3:
-                            mCon.weight.lbs_to_kg();
+                            mCon.weight.lbsToKg();
                             break;
                         case 4:
-                            mCon.weight.st_to_kg();
+                            mCon.weight.stToKg();
                             break;
                         case 5:
-                            mCon.weight.g_to_oz();
+                            mCon.weight.gToOz();
                             break;
                         case 6:
-                            mCon.weight.oz_to_g();
+                            mCon.weight.ozToG();
                             break;
                         default:
                             System.out.println("Please select a valid option!");
@@ -121,22 +121,22 @@ public class Main {
 
                     switch (time_action) {
                         case 1:
-                            mCon.time.s_to_hr();
+                            mCon.time.sToHr();
                             break;
                         case 2:
-                            mCon.time.s_to_day();
+                            mCon.time.sToDay();
                             break;
                         case 3:
-                            mCon.time.min_to_day();
+                            mCon.time.minToDay();
                             break;
                         case 4:
-                            mCon.time.hr_to_s();
+                            mCon.time.hrToS();
                             break;
                         case 5:
-                            mCon.time.day_to_s();
+                            mCon.time.dayToS();
                             break;
                         case 6:
-                            mCon.time.day_to_min();
+                            mCon.time.dayToMin();
                             break;
                         default:
                             System.out.println("Please select a valid option!");
@@ -146,6 +146,27 @@ public class Main {
                 default:
                     System.out.println("Please select a valid option!");
                     break;
+            }
+
+            // Last Choice
+            System.out.println("Are You Want to Continue? (y/n)");
+            char choice = scan.next().charAt(0);
+
+            boolean showAgainLC = true;
+            while (showAgainLC) {
+                switch (choice) {
+                    case 'y':
+                        showAgainLC = false;
+                        break;
+                    case 'n':
+                        showAgainMM = false;
+                        showAgainLC = false;
+                        break;
+                    default:
+                        System.out.println("Please Select a Valid Option...");
+                        showAgainLC = false;
+                        break;
+                }
             }
         }
     }

@@ -8,7 +8,7 @@ public class Weight {
     Scanner scan = new Scanner(System.in);
 
     // Kilograms to Pounds
-    public void kg_to_lbs() {
+    public void kgToLbs() {
         System.out.println("Please Enter Kilograms Value: ");
         double kg = scan.nextDouble();
         double lbs = kg * 2.2046;
@@ -16,7 +16,7 @@ public class Weight {
     }
 
     // Kilograms to Stones
-    public void kg_to_st() {
+    public void kgToSt() {
         System.out.println("Please Enter Kilograms Value: ");
         double kg = scan.nextDouble();
         double st = kg * 0.15747;
@@ -24,7 +24,7 @@ public class Weight {
     }
 
     // Pounds to Kilograms
-    public void lbs_to_kg() {
+    public void lbsToKg() {
         System.out.println("Please Enter Pounds Value: ");
         double lbs = scan.nextDouble();
         double kg = lbs / 2.2046;
@@ -32,7 +32,7 @@ public class Weight {
     }
 
     // Stones to Kilograms
-    public void st_to_kg() {
+    public void stToKg() {
         System.out.println("Please Enter Stones Value: ");
         double st = scan.nextDouble();
         double kg = st / 0.15747;
@@ -40,7 +40,7 @@ public class Weight {
     }
 
     // Grams to Ounces
-    public void g_to_oz() {
+    public void gToOz() {
         System.out.println("Please Enter Grams Value: ");
         double g = scan.nextDouble();
         double oz = g * 0.035274;
@@ -48,7 +48,7 @@ public class Weight {
     }
 
     // Ounces to Grams
-    public void oz_to_g() {
+    public void ozToG() {
         System.out.println("Please Enter Grams Value: ");
         double oz = scan.nextDouble();
         double g = oz / 0.035274;
