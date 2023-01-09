@@ -7,11 +7,14 @@ import java.util.*;
 public class Temperature {
     Scanner scan = new Scanner(System.in);
 
+    public static final double CELSIUS_TO_FARH_RATIO = 1.8000;
+    public static final double FARH_TEMP_FOR_ZERO_CELSIUS = 32;
+    public static final double ZERO_KELVINS = 273.15;
     // Celsius to Fahrenheit
     public void cToF() {
         System.out.println("Please Enter Celsius Value: ");
         double c = scan.nextDouble();
-        double f = (c * 1.8000) + 32;
+        double f = (c * CELSIUS_TO_FARH_RATIO) + FARH_TEMP_FOR_ZERO_CELSIUS;
         System.out.println(c + "°C is " + f + "°F");
     }
 
@@ -19,7 +22,7 @@ public class Temperature {
     public void  cToK() {
         System.out.println("Please Enter Celsius Value: ");
         double c = scan.nextDouble();
-        double k = c + 273.15;
+        double k = c + ZERO_KELVINS;
         System.out.println(c + "°C is " + k + "°K");
     }
 
@@ -27,7 +30,7 @@ public class Temperature {
     public void fToC() {
         System.out.println("Please Enter Fahrenheit Value: ");
         double f = scan.nextDouble();
-        double c = (f - 32) / 1.8000;
+        double c = (f - FARH_TEMP_FOR_ZERO_CELSIUS) / CELSIUS_TO_FARH_RATIO;
         System.out.println(f + "°F is " + c + "°C");
     }
 
@@ -35,7 +38,7 @@ public class Temperature {
     public void fToK() {
         System.out.println("Please Enter Fahrenheit Value: ");
         double f = scan.nextDouble();
-        double k = ((f - 32) / 1.8000) + 273.15;
+        double k = ((f - FARH_TEMP_FOR_ZERO_CELSIUS) / CELSIUS_TO_FARH_RATIO) + ZERO_KELVINS;
         System.out.println(f + "°F is " + k + "°K");
     }
 
@@ -43,7 +46,7 @@ public class Temperature {
     public void  kToC() {
         System.out.println("Please Enter Kelvin Value: ");
         double k = scan.nextDouble();
-        double c = k - 273.15;
+        double c = k - ZERO_KELVINS;
         System.out.println(k + "°K is " + c + "°C");
     }
 
@@ -51,7 +54,7 @@ public class Temperature {
     public void kToF() {
         System.out.println("Please Enter Kelvin Value: ");
         double k = scan.nextDouble();
-        double f = ((k - 273.15) * 1.8000) + 32;
+        double f = ((k - ZERO_KELVINS) * CELSIUS_TO_FARH_RATIO) + FARH_TEMP_FOR_ZERO_CELSIUS;
         System.out.println(k + "°K is " + f + "°F");
     }
 }
