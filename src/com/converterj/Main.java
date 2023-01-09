@@ -43,22 +43,24 @@ public class Main {
 
                     switch (temperature_action) {
                         case 1:
-                            mCon.temperature.cToF();
+                            //Now that application only knows that our mainConverter does the work, it and the developers
+                            //do not need to know that they are using the main converters temperature class.
+                            mCon.celsiusToFahrenheit();
                             break;
                         case 2:
-                            mCon.temperature.cToK();
+                            mCon.celsiusToKelvin();
                             break;
                         case 3:
-                            mCon.temperature.fToC();
+                            mCon.fahrenheitToCelsius();
                             break;
                         case 4:
-                            mCon.temperature.fToK();
+                            mCon.fahrenheitToKelvin();
                             break;
                         case 5:
-                            mCon.temperature.kToC();
+                            mCon.kelvinToCelsius();
                             break;
                         case 6:
-                            mCon.temperature.kToF();
+                            mCon.kelvinToFahrenheit();
                             break;
                         default:
                             System.out.println("Please select a valid option!");
