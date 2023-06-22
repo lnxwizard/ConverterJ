@@ -5,7 +5,7 @@ ConverterJ is basic metric converter. You can convert Temperature, Length, Area,
 - Open Command Prompt
 - Type 
 ```shell
-git clone https://github.com/AlperAkca79/ConverterJ.git
+git clone https://github.com/lnxwizard/ConverterJ.git
 ```
 ```shell
 cd ConverterJ
